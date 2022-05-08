@@ -1,14 +1,22 @@
 import styles from "./ServicesPage.module.css";
+import { useNavigate } from "react-router-dom";
 const ServicesPage = () => {
+  const navigate = useNavigate();
   return (
     <div className={styles.servicesPageWrapper}>
-      <a className={styles.menuLink} href="/services/dedicated-team">
+      <button
+        className={styles.menuLink}
+        onClick={() => navigate("/services/dedicated-team")}
+      >
         Dedicated Team
-      </a>
+      </button>
 
-      <a className={styles.menuLink} href="services/custom-software">
+      <button
+        className={styles.menuLink}
+        onClick={() => navigate("/services/custom-software")}
+      >
         Custom Software
-      </a>
+      </button>
     </div>
   );
 };

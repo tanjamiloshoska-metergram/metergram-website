@@ -4,16 +4,16 @@
   border-bottom: 5px solid orange;
 }
 .navBarLink {
-  padding: 10px;
-  font-style: italic;
   color: white;
-  font-style: normal;
+  background-color: transparent;
+  border: none;
   font-size: large;
-  text-decoration: none;
+  margin-left: 15px;
 }
 
 .navBarLink:hover {
   color: orange;
+  cursor: pointer;
 }
 
 body {

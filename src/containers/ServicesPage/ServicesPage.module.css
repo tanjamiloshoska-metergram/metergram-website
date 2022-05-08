@@ -1,14 +1,15 @@
 .menuLink {
-  padding: 10px;
-  font-style: italic;
   color: white;
-  font-style: normal;
+  background-color: transparent;
+  border: none;
   font-size: large;
+  margin-left: 15px;
   text-decoration: overline;
 }
 
 .menuLink:hover {
   color: orange;
+  cursor: pointer;
 }
 .servicesPageWrapper {
   margin: 40px;

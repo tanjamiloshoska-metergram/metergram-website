@@ -6,21 +6,30 @@ import logo from "./assets/logo.png";
 import ServicesPage from "./containers/ServicesPage/ServicesPage";
 import DedicatedTeamPage from "./containers/DedicatedTeamPage/DedicatedTeamPage";
 import CustomSoftwarePage from "./containers/CustomSoftwarePage/CustomSoftwarePage";
-function App() {
+import { useNavigate } from "react-router-dom";
+const App = () => {
+  const navigate = useNavigate();
+
   return (
     <div>
       <div className={styles.navBar}>
         <nav>
           <img src={logo} alt="metergram logo" />
-          <a className={styles.navBarLink} href="/">
+          <button className={styles.navBarLink} onClick={() => navigate("/")}>
             Home
-          </a>
-          <a className={styles.navBarLink} href="/about-us">
+          </button>
+          <button
+            className={styles.navBarLink}
+            onClick={() => navigate("/about-us")}
+          >
             About
-          </a>
-          <a className={styles.navBarLink} href="/services">
+          </button>
+          <button
+            className={styles.navBarLink}
+            onClick={() => navigate("/services")}
+          >
             Services
-          </a>
+          </button>
         </nav>
       </div>
       <Routes>
@@ -31,10 +40,13 @@ function App() {
           path="/services/custom-software"
           element={<CustomSoftwarePage />}
         />
-        <Route path="/services/dedicated-team" element={<DedicatedTeamPage />} />
+        <Route
+          path="/services/dedicated-team"
+          element={<DedicatedTeamPage />}
+        />
       </Routes>
     </div>
   );
-}
+};
 
 export default App;
