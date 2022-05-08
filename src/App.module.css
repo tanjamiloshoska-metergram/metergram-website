@@ -1,0 +1,26 @@
+.navBar {
+  padding: 30px;
+  background-color: rgb(38, 31, 98);
+  border-bottom: 5px solid orange;
+}
+.navBarLink {
+  padding: 10px;
+  font-style: italic;
+  color: white;
+  font-style: normal;
+  font-size: large;
+  text-decoration: none;
+}
+
+.navBarLink:hover {
+  color: orange;
+}
+
+body {
+  background-color: rgb(72, 73, 153);
+}
+
+img {
+  width: 80px;
+  height: 50px;
+}

@@ -1,0 +1,21 @@
+.menuLink {
+  padding: 10px;
+  font-style: italic;
+  color: white;
+  font-style: normal;
+  font-size: large;
+  text-decoration: overline;
+}
+
+.menuLink:hover {
+  color: orange;
+}
+.servicesPageWrapper {
+  margin: 40px;
+}
+
+.triangleImg {
+  width: 12px;
+  height: 12px;
+  margin-right: 5px;
+}
